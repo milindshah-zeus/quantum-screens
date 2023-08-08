@@ -19,9 +19,9 @@
                 <p class="login-heading">Log in with Quantum</p>
             </div>
             <div class="radio-group">
-                <img src="icons/radio-button-on.svg">
+                <input type="radio">
                 <p>District</p>
-                <img src="icons/radio-button-off.svg">
+                <input type="radio">
                 <p>Independent School</p>
             </div>
             <div class="dropdown-group">
@@ -29,8 +29,10 @@
                     State*
                 </div>
                 <div class="dropdown-input">
-                    <p>Alabama</p>
-                    <img src="icons/arrow-down.svg">
+                    <select aria-placeholder="Alabama">
+                        <option value="0">Alabama</option>
+                    </select>
+
                 </div>
             </div>
             <div class="dropdown-group">
@@ -38,13 +40,15 @@
                     District*
                 </div>
                 <div class="dropdown-input">
-                    <p>Alabama School District</p>
-                    <img src="icons/arrow-down.svg">
+                    <select aria-placeholder="Alabama">
+                        <option value="0">Alabama School District</option>
+                    </select>
+                    
                 </div>
             </div>
 
             <div class="text-input-group username-input">
-                <p>Username/Email ID*</p>
+                <input type="text" id="username" placeholder="Username/Email">
                 <div class="input-action">
                     <a>FORGOT USERNAME?</a>
                 </div>
@@ -52,8 +56,7 @@
 
             <div class="password-input-group">
                 <div class="password-flex">
-                    <p>Password*</p>
-                    <img src="icons/preview.svg">
+                    <input type="Password" id="username" placeholder="Password">
                 </div>
                 <div class="input-action">
                     <a>FORGOT PASSWORD?</a>
@@ -61,7 +64,8 @@
             </div>
 
             <div class="remember-group">
-                <img src="icons/checkbox-checked.svg">
+
+                <input type="checkbox" id="remember">
                 <p>Remember Me</p>
             </div>
 

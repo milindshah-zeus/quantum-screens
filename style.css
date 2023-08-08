@@ -62,6 +62,28 @@ header {
     margin-bottom: 25px;
 }
 
+#remember,radio {
+    height: 20px;
+    width: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+select,#username,#password{
+    width:100%;
+    font-family: Quicksand, sans-serif;
+    padding-bottom:5px;
+    padding-top:5px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-bottom: rgba(0, 0, 0, 0.12) 1px solid;
+}
+
+#remember input:checked ~ .mark  {
+    background-color:#3FD28B !important;
+  }
+
 .radio-group>img {
     margin-right: 8px;
 }
@@ -177,7 +199,7 @@ header {
 }
 
 footer {
-    
+
     height: 40px;
     display: flex;
     background-color: #E0E1E1;
@@ -204,19 +226,19 @@ footer>img {
 }
 
 @media only screen and (min-height: 814px) {
-   footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-   }
-   
-   .links {
-    
-    position: fixed;
-    left: 0;
-    bottom: 40px;
-    width: 100%;
+    footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .links {
+
+        position: fixed;
+        left: 0;
+        bottom: 40px;
+        width: 100%;
     }
 
 }
