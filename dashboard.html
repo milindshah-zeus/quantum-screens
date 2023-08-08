@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dashboardstyle.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <img src="icons/logo used in header.svg">
+        <nav>
+            <a class="nav-selected nav-items">DASHBOARD</a>
+            <a class="nav-items"> CONTENT</a>
+            <a class="nav-items"> USERS</a>
+            <a class="nav-items"> REPORT</a>
+            <a class="nav-items"> ADMIN</a>
+            <div class="badge-containers alert-div">
+                <div class="badge alert-badge">2</div>
+                <i class="zmdi zmdi-notifications-active alert-icon"></i>
+                <!-- <svg id="notifications" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path id="Path_3674" data-name="Path 3674" d="M0,0H24V24H0Z" fill="none" />
+                    <path id="Path_3675" data-name="Path 3675"
+                        d="M7.58,4.08,6.15,2.65A10.425,10.425,0,0,0,2.03,10.5h2A8.446,8.446,0,0,1,7.58,4.08ZM19.97,10.5h2a10.489,10.489,0,0,0-4.12-7.85L16.43,4.08A8.5,8.5,0,0,1,19.97,10.5ZM18,11c0-3.07-1.64-5.64-4.5-6.32V4a1.5,1.5,0,0,0-3,0v.68C7.63,5.36,6,7.92,6,11v5L4,18v1H20V18l-2-2ZM12,22a1.752,1.752,0,0,0,.4-.04,2.029,2.029,0,0,0,1.44-1.18,2.008,2.008,0,0,0,.15-.78h-4A2.014,2.014,0,0,0,12,22Z"
+                        fill="#3fd28b" />
+                </svg> -->
+                <div class="alert-preview-group">
+                    <div id="alert-preview-container">
+                        <div id="alert-preview-render">
+
+                        </div>
+                        <!-- 
+
+                        <div class="alert-preview">
+                            <div class="flex">
+                                <div class="alert-preview-heading">No classes will be held on 21st Nov /div>
+                                <i class="zmdi zmdi-check-circle green right announcement-preview-icon"></i>
+                            </div>
+
+                            <div class="flex alert-preview-info">
+                                <span>
+                                    <i class="zmdi zmdi-attachment-alt"></i>
+                                    2 files are attached
+                                </span>
+                                <span class='alert-preview-date'>
+                                    15-Sep-2018 at 07:21 pm
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="alert-preview alert-preview-selected">
+                            <div class="flex">
+                                <div class="alert-preview-heading">No classes will be held on 21st Nov Lorem ipsum dolor
+                                    sit amet consectetur adipisicing elit. Molestias, explicabo. Deserunt fugit et
+                                    repellendus quisquam inventore suscipit facilis soluta excepturi laudantium at
+                                    officiis aliquam quod, sequi nam quasi doloremque, officia veniam iure distinctio,
+                                    porro atque rem explicabo vitae impedit. Quasi repellendus totam ex id cum laborum
+                                    et sapiente sunt libero!</div>
+                                <i class="zmdi zmdi-check-circle green right announcement-preview-icon"></i>
+                            </div>
+
+                            <div class="flex alert-preview-course">
+                                Course: Mathematics 101
+                            </div>
+                            <div class="flex alert-preview-info">
+
+                                <span class='alert-preview-date'>
+                                    15-Sep-2018 at 07:21 pm
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="alert-preview">
+                            <div class="flex">
+                                <div class="alert-preview-heading">No classes will be held on 21st Nov Lorem ipsum dolor
+                                    sit amet consectetur adipisicing elit. Molestias, explicabo. Deserunt fugit et
+                                    repellendus quisquam inventore suscipit facilis soluta excepturi laudantium at
+                                    officiis aliquam quod, sequi nam quasi doloremque, officia veniam iure distinctio,
+                                    porro atque rem explicabo vitae impedit. Quasi repellendus totam ex id cum laborum
+                                    et sapiente sunt libero!</div>
+                                <i class="zmdi zmdi-check-circle green right announcement-preview-icon"></i>
+                            </div>
+
+                            <div class="flex alert-preview-info">
+                                <span>
+                                    <i class="zmdi zmdi-attachment-alt"></i>
+                                    2 files are attached
+                                </span>
+                                <span class='alert-preview-date'>
+                                    15-Sep-2018 at 07:21 pm
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="alert-preview">
+                            <div class="flex">
+                                <div class="alert-preview-heading">No classes will be held on 21st Nov Lorem ipsum dolor
+                                    sit amet consectetur adipisicing elit. Molestias, explicabo. Deserunt fugit et
+                                    repellendus quisquam inventore suscipit facilis soluta excepturi laudantium at
+                                    officiis aliquam quod, sequi nam quasi doloremque, officia veniam iure distinctio,
+                                    porro atque rem explicabo vitae impedit. Quasi repellendus totam ex id cum laborum
+                                    et sapiente sunt libero!</div>
+                                <i class="zmdi zmdi-check-circle green right announcement-preview-icon"></i>
+                            </div>
+
+                            <div class="flex alert-preview-info">
+                                <span>
+                                    <i class="zmdi zmdi-attachment-alt"></i>
+                                    2 files are attached
+                                </span>
+                                <span class='alert-preview-date'>
+                                    15-Sep-2018 at 07:21 pm
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="alert-preview">
+                            <div class="flex">
+                                <div class="alert-preview-heading">No classes will be held on 21st Nov Lorem ipsum dolor
+                                    sit amet consectetur adipisicing elit. Molestias, explicabo. Deserunt fugit et
+                                    repellendus quisquam inventore suscipit facilis soluta excepturi laudantium at
+                                    officiis aliquam quod, sequi nam quasi doloremque, officia veniam iure distinctio,
+                                    porro atque rem explicabo vitae impedit. Quasi repellendus totam ex id cum laborum
+                                    et sapiente sunt libero!</div>
+                                <i class="zmdi zmdi-check-circle green right announcement-preview-icon"></i>
+                            </div>
+
+                            <div class="flex alert-preview-course">
+                                Course: Mathematics 101
+                            </div>
+                            <div class="flex alert-preview-info">
+
+                                <span class='alert-preview-date'>
+                                    15-Sep-2018 at 07:21 pm
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="alert-preview">
+                            <div class="flex">
+                                <div class="alert-preview-heading">No classes will be held on 21st Nov Lorem ipsum dolor
+                                    sit amet consectetur adipisicing elit. Molestias, explicabo. Deserunt fugit et
+                                    repellendus quisquam inventore suscipit facilis soluta excepturi laudantium at
+                                    officiis aliquam quod, sequi nam quasi doloremque, officia veniam iure distinctio,
+                                    porro atque rem explicabo vitae impedit. Quasi repellendus totam ex id cum laborum
+                                    et sapiente sunt libero!</div>
+                                <i class="zmdi zmdi-check-circle green right announcement-preview-icon"></i>
+                            </div>
+
+                            <div class="flex alert-preview-info">
+                                <span>
+                                    <i class="zmdi zmdi-attachment-alt"></i>
+                                    2 files are attached
+                                </span>
+                                <span class='alert-preview-date'>
+                                    15-Sep-2018 at 07:21 pm
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="alert-preview">
+                            <div class="flex">
+                                <div class="alert-preview-heading">No classes will be held on 21st Nov Lorem ipsum dolor
+                                    sit amet consectetur adipisicing elit. Molestias, explicabo. Deserunt fugit et
+                                    repellendus quisquam inventore suscipit facilis soluta excepturi laudantium at
+                                    officiis aliquam quod, sequi nam quasi doloremque, officia veniam iure distinctio,
+                                    porro atque rem explicabo vitae impedit. Quasi repellendus totam ex id cum laborum
+                                    et sapiente sunt libero!</div>
+                                <i class="zmdi zmdi-check-circle green right announcement-preview-icon"></i>
+                            </div>
+
+                            <div class="flex alert-preview-info">
+                                <span>
+                                    <i class="zmdi zmdi-attachment-alt"></i>
+                                    2 files are attached
+                                </span>
+                                <span class='alert-preview-date'>
+                                    15-Sep-2018 at 07:21 pm
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="alert-preview">
+                            <div class="flex">
+                                <div class="alert-preview-heading">No classes will be held on 21st Nov Lorem ipsum dolor
+                                    sit amet consectetur adipisicing elit. Molestias, explicabo. Deserunt fugit et
+                                    repellendus quisquam inventore suscipit facilis soluta excepturi laudantium at
+                                    officiis aliquam quod, sequi nam quasi doloremque, officia veniam iure distinctio,
+                                    porro atque rem explicabo vitae impedit. Quasi repellendus totam ex id cum laborum
+                                    et sapiente sunt libero!</div>
+                                <i class="zmdi zmdi-check-circle green right announcement-preview-icon"></i>
+                            </div>
+
+                            <div class="flex alert-preview-course">
+                                Course: Mathematics 101
+                            </div>
+                            <div class="flex alert-preview-info">
+
+                                <span class='alert-preview-date'>
+                                    15-Sep-2018 at 07:21 pm
+                                </span>
+                            </div>
+                        </div> -->
+
+                        <div class="alert-footer">
+                            <a>
+                                SHOW ALL
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="badge-containers announcement-div">
+                <div class="badge announcement-badge">1</div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"
+                    class="announcement-icon">
+                    <path id="Forma_1" data-name="Forma 1"
+                        d="M1076.936,181.974a1.242,1.242,0,0,1-.92-.778l-2.513-6.7h-.379a.625.625,0,0,1-.625-.626v-.625h-1.876a.625.625,0,0,1-.625-.625v-3.75a.625.625,0,0,1,.625-.625h1.876v-.626a.625.625,0,0,1,.625-.625h6.228c.217-.01.431-.044.647-.064v7.628c-.214-.021-.427-.054-.642-.064h-1.66l2.1,4.2a1.247,1.247,0,0,1-.229,1.446l-1.5,1.489a1.215,1.215,0,0,1-.879.37A1.25,1.25,0,0,1,1076.936,181.974Zm12.183-2.53c-.019-.009-.033-.025-.052-.036a.6.6,0,0,1-.155-.121c-.006-.007-.015-.01-.021-.016a13.146,13.146,0,0,0-7.642-4.527v-7.988a13.148,13.148,0,0,0,7.642-4.528c.005-.005.013-.006.018-.012a.621.621,0,0,1,.274-.177.461.461,0,0,1,.07-.014.561.561,0,0,1,.122-.025.627.627,0,0,1,.175.035.04.04,0,0,0,.018,0,.042.042,0,0,1,.018,0s.006.006.01.007a.62.62,0,0,1,.262.2.414.414,0,0,1,.04.059.6.6,0,0,1,.1.322v16.249a.6.6,0,0,1-.1.322c-.014.022-.025.039-.04.059a.6.6,0,0,1-.262.2s-.006.006-.01.008a.628.628,0,0,1-.466-.019Z"
+                        transform="translate(-1070 -162)" />
+                </svg>
+
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+                    <path id="Forma_1" data-name="Forma 1"
+                        d="M1076.936,181.974a1.242,1.242,0,0,1-.92-.778l-2.513-6.7h-.379a.625.625,0,0,1-.625-.626v-.625h-1.876a.625.625,0,0,1-.625-.625v-3.75a.625.625,0,0,1,.625-.625h1.876v-.626a.625.625,0,0,1,.625-.625h6.228c.217-.01.431-.044.647-.064v7.628c-.214-.021-.427-.054-.642-.064h-1.66l2.1,4.2a1.247,1.247,0,0,1-.229,1.446l-1.5,1.489a1.215,1.215,0,0,1-.879.37A1.25,1.25,0,0,1,1076.936,181.974Zm12.183-2.53c-.019-.009-.033-.025-.052-.036a.6.6,0,0,1-.155-.121c-.006-.007-.015-.01-.021-.016a13.146,13.146,0,0,0-7.642-4.527v-7.988a13.148,13.148,0,0,0,7.642-4.528c.005-.005.013-.006.018-.012a.621.621,0,0,1,.274-.177.461.461,0,0,1,.07-.014.561.561,0,0,1,.122-.025.627.627,0,0,1,.175.035.04.04,0,0,0,.018,0,.042.042,0,0,1,.018,0s.006.006.01.007a.62.62,0,0,1,.262.2.414.414,0,0,1,.04.059.6.6,0,0,1,.1.322v16.249a.6.6,0,0,1-.1.322c-.014.022-.025.039-.04.059a.6.6,0,0,1-.262.2s-.006.006-.01.008a.628.628,0,0,1-.466-.019Z"
+                        transform="translate(-1070 -162)" fill="#3fd28b" />
+                </svg> -->
+                <div class="announcement-preview-group">
+                    <div class="announcement-preview-container">
+                        <div class="announcement-preview announcement-preview-selected">
+
+                            <div class="flex announcement-preview-info">
+                                <span class="grey">
+                                    PA:
+                                </span>
+                                <span class="announcement-preview-PA"> Wilson Kumar</span>
+                                <i class="zmdi zmdi-check-circle green right announcement-preview-icon"></i>
+                            </div>
+                            <div class="announcement-preview-heading">No classes will be held on 21st Nov</div>
+                            <div class="flex announcement-preview-info">
+                                <span>
+                                    <i class="zmdi zmdi-attachment-alt"></i>
+                                    2 files are attached
+                                </span>
+                                <span class='announcement-preview-date'>
+                                    15-Sep-2018 at 07:21 pm
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="announcement-preview">
+                            <div class="flex announcement-preview-info">
+                                <span class="grey">
+                                    PA:
+                                </span>
+                                <span class="announcement-preview-PA"> Samson White</span>
+                                <i class="zmdi zmdi-minus-circle-outline green right announcement-preview-icon"></i>
+                            </div>
+                            <div class="announcement-preview-heading">Guest lecture on Geometry on 20th September</div>
+                            <div class="flex announcement-preview-info">
+                                <span>
+                                    <i class="zmdi zmdi-attachment-alt"></i>
+                                    2 files are attached
+                                </span>
+                                <span class='announcement-preview-date'>
+                                    15-Sep-2018 at 07:21 pm
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="announcement-preview announcement-preview-selected">
+                            <div class="flex announcement-preview-info">
+                                <span class="grey">
+                                    PA:
+                                </span>
+                                <span class="announcement-preview-PA"> Samson White</span>
+                                <i class="zmdi zmdi-check-circle green right announcement-preview-icon"></i>
+                            </div>
+                            <div class="announcement-preview-heading">Guest lecture on Geometry on 20th September</div>
+                            <div class="flex announcement-preview-course">
+                                Course: Mathematics 101
+                            </div>
+                            <div class="flex announcement-preview-info">
+
+                                <span class='announcement-preview-date'>
+                                    15-Sep-2018 at 07:21 pm
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="announcement-preview">
+                            <div class="flex announcement-preview-info">
+                                <span class="grey">
+                                    PA:
+                                </span>
+                                <span class="announcement-preview-PA"> Wilson Kumar</span>
+                                <i class="zmdi zmdi-minus-circle-outline green right announcement-preview-icon"></i>
+                            </div>
+                            <div class="announcement-preview-heading">No classes will be held on 21st Nov</div>
+                            <div class="flex announcement-preview-info">
+                                <span>
+                                    <i class="zmdi zmdi-attachment-alt"></i>
+                                    2 files are attached
+                                </span>
+                                <span class='announcement-preview-date'>
+                                    15-Sep-2018 at 07:21 pm
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="announcement-preview">
+                            <div class="flex announcement-preview-info">
+                                <span class="grey">
+                                    PA:
+                                </span>
+                                <span class="announcement-preview-PA"> Samson White</span>
+                                <i class="zmdi zmdi-minus-circle-outline green right announcement-preview-icon"></i>
+                            </div>
+                            <div class="announcement-preview-heading">Guest lecture on Geometry on 20th September</div>
+                            <div class="flex announcement-preview-info">
+                                <span>
+                                    <i class="zmdi zmdi-attachment-alt"></i>
+                                    2 files are attached
+                                </span>
+                                <span class='announcement-preview-date'>
+                                    15-Sep-2018 at 07:21 pm
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="announcement-preview">
+                            <div class="flex announcement-preview-info">
+                                <span class="grey">
+                                    PA:
+                                </span>
+                                <span class="announcement-preview-PA"> Samson White</span>
+                                <i class="zmdi zmdi-minus-circle-outline green right announcement-preview-icon"></i>
+                            </div>
+                            <div class="announcement-preview-heading">Guest lecture on Geometry on 20th September</div>
+                            <div class="flex announcement-preview-course">
+                                Course: Mathematics 101
+                            </div>
+                            <div class="flex announcement-preview-info">
+
+                                <span class='announcement-preview-date'>
+                                    15-Sep-2018 at 07:21 pm
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="announcement-preview">
+                            <div class="flex announcement-preview-info">
+                                <span class="grey">
+                                    PA:
+                                </span>
+                                <span class="announcement-preview-PA"> Wilson Kumar</span>
+                                <i class="zmdi zmdi-minus-circle-outline green right announcement-preview-icon"></i>
+                            </div>
+                            <div class="announcement-preview-heading">No classes will be held on 21st Nov</div>
+                            <div class="flex announcement-preview-info">
+                                <span>
+                                    <i class="zmdi zmdi-attachment-alt"></i>
+                                    2 files are attached
+                                </span>
+                                <span class='announcement-preview-date'>
+                                    15-Sep-2018 at 07:21 pm
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="announcement-preview">
+                            <div class="flex announcement-preview-info">
+                                <span class="grey">
+                                    PA:
+                                </span>
+                                <span class="announcement-preview-PA"> Samson White</span>
+                                <i class="zmdi zmdi-minus-circle-outline green right announcement-preview-icon"></i>
+                            </div>
+                            <div class="announcement-preview-heading">Guest lecture on Geometry on 20th September</div>
+                            <div class="flex announcement-preview-info">
+                                <span>
+                                    <i class="zmdi zmdi-attachment-alt"></i>
+                                    2 files are attached
+                                </span>
+                                <span class='announcement-preview-date'>
+                                    15-Sep-2018 at 07:21 pm
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="announcement-preview">
+                            <div class="flex announcement-preview-info">
+                                <span class="grey">
+                                    PA:
+                                </span>
+                                <span class="announcement-preview-PA"> Samson White</span>
+                                <i class="zmdi zmdi-minus-circle-outline green right announcement-preview-icon"></i>
+                            </div>
+                            <div class="announcement-preview-heading">Guest lecture on Geometry on 20th September</div>
+                            <div class="flex announcement-preview-course">
+                                Course: Mathematics 101
+                            </div>
+                            <div class="flex announcement-preview-info">
+
+                                <span class='announcement-preview-date'>
+                                    15-Sep-2018 at 07:21 pm
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="announcement-footer">
+                            <a>
+                                SHOW ALL</a>
+                            <div class="divider"></div>
+                            <a>
+                                CREATE NEW
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <a href="login.html">
+                <div class="badge-containers">
+                    <div class="badge profile-badge">M</div>
+
+                    <svg id="account_circle_black_24dp_5_" data-name="account_circle_black_24dp (5)"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <g id="Group_7158" data-name="Group 7158">
+                            <rect id="Rectangle_1838" data-name="Rectangle 1838" width="24" height="24" fill="none" />
+                        </g>
+                        <g id="Group_7159" data-name="Group 7159">
+                            <path id="Path_3676" data-name="Path 3676"
+                                d="M12,2A10,10,0,1,0,22,12,10,10,0,0,0,12,2Zm0,4A3.5,3.5,0,1,1,8.5,9.5,3.5,3.5,0,0,1,12,6Zm0,14a8.008,8.008,0,0,1-6.14-2.88,9.951,9.951,0,0,1,12.28,0A8.008,8.008,0,0,1,12,20Z"
+                                fill="#3fd28b" />
+                        </g>
+                    </svg>
+                </div>
+            </a>
+            <div class="hamburger-menu">
+                <div>
+                    <svg id="hamburger-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                        viewBox="0 0 24 24">
+                        <path id="Path_1833" data-name="Path 1833" d="M0,0H24V24H0Z" fill="none" />
+                        <path id="Path_1834" data-name="Path 1834" d="M3,18H21V16H3Zm0-5H21V11H3ZM3,6V8H21V6Z"
+                            fill="#3fd28b" />
+                    </svg>
+
+                </div>
+                <div class="hamburger-menu-contents">
+                    <a>DASHBOARD</a>
+                    <button class="dropdown-btn">CONTENT
+                        <img class="nav-dropdown-icon" src="icons/chevron-down.svg"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a>COURSE CATALOG</a>
+                    </div>
+                    <button class="dropdown-btn">USERS
+                        <img class="nav-dropdown-icon" src="icons/chevron-down.svg"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a>COURSE CATALOG</a>
+                    </div>
+                    <button class="dropdown-btn">REPORTS
+                        <img class="nav-dropdown-icon" src="icons/chevron-down.svg"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a>COURSE CATALOG</a>
+                    </div>
+                    <button class="dropdown-btn">ADMIN
+                        <img class="nav-dropdown-icon" src="icons/chevron-down.svg"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <a>COURSE CATALOG</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </nav>
+
+    </header>
+    <div class="container">
+        <div class="menu">
+            <a class="menu-selected">
+                <img src="icons/courses.svg">
+                <p>4</p> Courses
+            </a>
+            <a class="">
+                <img src="icons/classes.svg">
+                <p>4</p> Classes
+            </a>
+        </div>
+        <div class="menu-actions">
+            <div class="list-detail" id="list-detail">
+
+            </div>
+            <div class="list-action">
+                <div class="label">
+                    Sort By:
+                </div>
+                <div class="course-input">
+                    <div class="course-value">Course</div>
+                    <img src="icons/arrow-down.svg">
+                </div>
+                <img src="icons/sort.svg">
+            </div>
+        </div>
+        <div class="courses" id="courses">
+            <!-- <div class="course-card">
+                <img src="images/imageMask-1.svg">
+                <div class="course-details">
+                    <div class="course-heading"><span class="course-name">Acceleration</span> <img class="active"
+                            src="icons/favourite.svg"></div>
+                    <div class="course-subject"><span>Physics</span><span>&nbsp;|&nbsp</span> <span> Grade 7
+                        </span><span>&nbsp;</span></span><span class="green"> +2 </span></div>
+                    <div class="course-content"><b>4&nbsp;</b>Units &nbsp;&nbsp; <b>18&nbsp;</b>lessons &nbsp;&nbsp;<b>
+                            24&nbsp;</b>topics</div>
+                    <div class="course-teacher">Mr. Franks Class B <img src="icons/arrow-down.svg"></div>
+                    <div class="course-info">50 Students | 21-Jan-2020 - 21-Aug-2020</div>
+                </div>
+                <div class="course-actions">
+                    <img class="course-preview" src="icons/preview.svg">
+                    <img class="course-manage" src="icons/manage course.svg">
+                    <img class="couse-grade" src="icons/grade submissions.svg">
+                    <img class="course-report" src="icons/reports.svg">
+                </div>
+            </div> -->
+
+            <!-- <div class="course-card">
+                <img src="images/imageMask-2.svg">
+                <div class="course-details">
+                    <div class="course-heading"><span class="course-name">Displacement, Velocity and Speed</span> <img
+                            class="active" src="icons/favourite.svg"></div>
+                    <div class="course-subject"><span>Physics</span><span>&nbsp;|&nbsp</span> <span> Grade 7
+                        </span><span>&nbsp;</span></span><span class="green"> +2 </span></div>
+                    <div class="course-content"><b>2&nbsp;</b>Units &nbsp;&nbsp; <b>15&nbsp;</b>lessons &nbsp;&nbsp;<b>
+                            20&nbsp;</b>topics</div>
+                    <div class="course-teacher no-class">No Classes <img src="icons/arrow-down.svg"></div>
+                    
+                </div>
+                <div class="course-actions">
+                    <img class="course-preview" src="icons/preview.svg">
+                    <img class="course-manage disabled" src="icons/manage course.svg">
+                    <img class="couse-grade disabled" src="icons/grade submissions.svg">
+                    <img class="course-report" src="icons/reports.svg">
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="images/imageMask.svg">
+                <div class="course-details">
+                    <div class="course-heading"><span class="course-name">Introduction to Biology: Micro organisms and
+                            how they affec...</span> <img class="active" src="icons/favourite.svg"></div>
+                    <div class="course-subject"><span>Mathematics</span><span>&nbsp;|&nbsp</span> <span> Grade 4
+                        </span><span>&nbsp;</span></span><span class="green"> +1 </span></div>
+                    <div class="course-content"><b>5&nbsp;</b>Units &nbsp;&nbsp; <b>16&nbsp;</b>lessons &nbsp;&nbsp;<b>
+                            22&nbsp;</b>topics</div>
+                    <div class="course-teacher">All Classes <img src="icons/arrow-down.svg"></div>
+                    <div class="course-info">3000 Students </div>
+                </div>
+                <div class="course-actions">
+                    <img class="course-preview" src="icons/preview.svg">
+                    <img class="course-manage disabled" src="icons/manage course.svg">
+                    <img class="couse-grade disabled" src="icons/grade submissions.svg">
+                    <img class="course-report" src="icons/reports.svg">
+                </div>
+            </div>
+            <div class="course-card">
+                <div class="expired">
+                    EXPIRED
+                </div>
+                <img src="images/imageMask-3.svg">
+                <div class="course-details">
+                    <div class="course-heading"><span class="course-name">Introduction to High School Mathematics</span>
+                        <img class="active disabled" src="icons/favourite.svg">
+                    </div>
+                    <div class="course-subject"><span>Mathematics</span><span>&nbsp;|&nbsp</span> <span> Grade 8
+                        </span><span>&nbsp;</span></span><span class="green"> +3 </span></div>
+                    
+                    <div class="course-teacher">Mr. Franks Class B <img src="icons/arrow-down.svg"></div>
+                    <div class="course-info">44 Students | 14-Oct-2019 - 20-Oct-2020</div>
+                </div>
+                <div class="course-actions">
+                    <img class="course-preview" src="icons/preview.svg">
+                    <img class="course-manage" src="icons/manage course.svg">
+                    <img class="couse-grade" src="icons/grade submissions.svg">
+                    <img class="course-report" src="icons/reports.svg">
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+    <div class="links">
+        <a>About</a>
+        &nbsp | &nbsp
+        <a>Contact Us</a>
+    </div>
+    <footer>
+
+        <img src="icons/logo used in footer.svg">
+        |
+        <div class="copyright"> Copyright © 2020-2021 </div>
+        <div class="company"> Zeus Systems Pvt. Ltd.</div>
+        <div class="rights"> All rights reserved. </div>
+    </footer>
+
+    <script>
+
+
+        const coursesfetch = async () => {
+            const response = await fetch('./data.json');
+            const json = await response.json();
+            courses = json['courses'];
+            return courses
+        };
+
+        let courses = coursesfetch();
+        courses.then((result) => {
+            console.log(courses)
+            const courseMarkup = courses.map(course => `
+        <div class="course-card">
+                <img src="images/${course.image}">
+                <div class="course-details">
+                    <div class="course-heading"><span class="course-name">Acceleration</span> 
+                        <img class="active  ${course.favourite ? '' : `disabled`}" src="icons/favourite.svg"></div>
+                    <div class="course-subject"><span>Physics</span><span>&nbsp;|&nbsp</span> <span> Grade 7
+                        </span><span>&nbsp;</span></span><span class="green"> +2 </span></div>
+                    <div class="course-content"><b>4&nbsp;</b>Units &nbsp;&nbsp; <b>18&nbsp;</b>lessons &nbsp;&nbsp;<b>
+                            24&nbsp;</b>topics</div>
+                    <div class="course-teacher">Mr. Franks Class B <img src="icons/arrow-down.svg"></div>
+                    <div class="course-info">50 Students | 21-Jan-2020 - 21-Aug-2020</div>
+                </div>
+                <div class="course-actions">
+                    <img class="course-preview" src="icons/preview.svg">
+                    <img class="course-manage" src="icons/manage course.svg">
+                    <img class="couse-grade" src="icons/grade submissions.svg">
+                    <img class="course-report" src="icons/reports.svg">
+                </div>
+            </div>
+            `).join('');
+
+            document.getElementById("courses").innerHTML = courseMarkup;
+            document.getElementById("list-detail").innerHTML = `Showing ${courses.length} of ${courses.length} courses`
+        })
+            .catch((error) => {
+                console.log(error);
+            });
+
+
+        const alertsfetch = async () => {
+            const response = await fetch('./data.json');
+            const json = await response.json();
+            alerts = json['alerts'];
+            return alerts
+        };
+
+        let alerts = alertsfetch();
+        alerts.then((result) => {
+            console.log(alerts)
+            const alertMarkup = alerts.map(alert => `
+            <div class="alert-preview ${alert.checked ? `alert-preview-selected` :'' }">
+                            <div class="flex">
+                                <div class="alert-preview-heading">${alert.message}</div>
+                                <i class="zmdi ${alert.checked ? `zmdi-check-circle`:`zmdi-minus-circle-outline`}  green right announcement-preview-icon"></i>
+                            </div>
+
+                            ${alert.course !=undefined ?` <div class="flex alert-preview-course">
+                                Course: ${alert.course}
+                            </div>
+                            `:'' }
+
+
+                            <div class="flex alert-preview-info">
+                                ${alert.attachments!=null?  `<span>
+                                    <i class="zmdi zmdi-attachment-alt"></i>
+                                    ${alert.attachments} files are attached
+                                </span>`
+                                :''}
+                                <span class='alert-preview-date'>
+                                    ${alert.datetime}
+                                </span>
+                            </div>
+                        </div>
+            `).join('');
+            
+            document.getElementById("alert-preview-render").innerHTML = alertMarkup;
+
+        })
+            .catch((error) => {
+                console.log(error);
+            });
+
+
+
+
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                this.classList.toggle("nav-dropdown-active");
+                //    console.log(this.children[0].classList)
+                this.children[0].classList.toggle('nav-dropdown-icon-expanded')
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "flex") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "flex";
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+{
+    "courses": [
+        {
+            "name": "Acceleration",
+            "subject": "Physics",
+            "image": "imageMask-1.svg",
+            "grade": "7 +2",
+            "units": 4,
+            "lessons": 8,
+            "class": "Mr. Frank's Class B",
+            "students": 50,
+            "start-date": "21-Jan-2020",
+            "end-date": "21-Aug-2020",
+            "favourite": true
+        },
+        {
+            "name": "Acceleration",
+            "subject": "Physics",
+            "image": "imageMask-2.svg",
+            "grade": "7 +2",
+            "units": 4,
+            "lessons": 8,
+            "class": "Mr. Frank's Class B",
+            "students": 50,
+            "start-date": "21-Jan-2020",
+            "end-date": "21-Aug-2020",
+            "favourite": true
+        },
+        {
+            "name": "Acceleration",
+            "subject": "Physics",
+            "image": "imageMask.svg",
+            "grade": "7 +2",
+            "units": 4,
+            "lessons": 8,
+            "class": "Mr. Frank's Class B",
+            "students": 50,
+            "start-date": "21-Jan-2020",
+            "end-date": "21-Aug-2020",
+            "favourite": true
+        },
+        {
+            "name": "Acceleration",
+            "subject": "Physics",
+            "image": "imageMask-3.svg",
+            "grade": "7 +2",
+            "units": 4,
+            "lessons": 8,
+            "class": "Mr. Frank's Class B",
+            "students": 50,
+            "start-date": "21-Jan-2020",
+            "end-date": "21-Aug-2020",
+            "favourite": false
+        }
+    ],
+    "alerts": [
+        {
+            "message": "License for Introduction to Algebra has been assigned to your school",
+            "checked": true,
+            "attachments": 2,
+            "datetime": "15-Sep-2018 at 07:21 pm"
+        },
+        {
+            "message": "Lesson 3 Practice Worksheet overdue for Amy Santiago",
+            "checked": false,
+            "attachments": null,
+            "datetime": "15-Sep-2018 at 07:21 pm",
+            "course": "Mathematics 101"
+        },
+        {
+
+            "message":"23 new students created",
+            "checked": true,
+            "attachments": 2,
+            "datetime": "15-Sep-2018 at 07:21 pm"
+        }
+    ],
+
+    "announcements": [
+        {
+            "PA": "wilson kumar",
+            "message": "test message",
+            "checked": true,
+            "attachments": 2,
+            "datetime": "15-Sep-2018 at 07:21 pm",
+            "course": "Mathematics 101"
+        },
+        {
+            "PA": "wilson kumar",
+            "message": "test message",
+            "checked": false,
+            "attachments": 2,
+            "datetime": "15-Sep-2018 at 07:21 pm",
+            "course": "Mathematics 101"
+        },
+        {
+            "PA":"wilson kumar",
+            "message":"test message",
+            "checked": true,
+            "attachments": 2,
+            "datetime": "15-Sep-2018 at 07:21 pm",
+            "course": "Mathematics 101"
+        }
+    ]
+}
